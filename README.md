@@ -103,6 +103,48 @@ In *CSS*:
 Bron: [MDN, 2023](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API#styling_webvtt_cues)
 
 
+## Eerste prototype
+Voor dit eerste prototype heb ik met *WebVTT* geprobeerd de emoties van de personages beter duidelijk te maken in de ondertiteling door gebruik van lettertypes en kleuren. Om duidelijk te maken welk personage wat zegt, heb ik per personage één kleur uitgekozen. Voor de emoties was het idee om die uit te drukken in het lettertype. Hiervoor gebruik ik verschillende lettertypes, waaronder één variabele met veel mogelijkheden.
+
+Origineel wilde ik nog meer variaties maken met ```letter-spacing```, ```font-size```, ```text-transform``` etc. Helaas blijkt *vtt* toch wat minder goed vorm te geven dan ik had gedacht en werken al deze *properties* niet.
+
+Op het laatst heb ik nog gauw een legenda toegevoegd met de betekenissen van de verschillende letters:
+
+![legenda van eerste prototype](./readme-images/prototype1_legenda.webp)
+
+Als iets niet helemaal duidelijk is hier snel te zien wat er bedoeld wordt.
+
+Naast de mogelijkheden uit de legenda kunnen ook verschillende versies worden gecombineerd, waardoor een combinatie van emoties duidelijk zou moeten worden.
+
+
+## User test 1 (10-04-2024)
+
+### Test plan
+1. Het idee is om eerst de scene te kijken zonder eerst de betekenis van de verschillende letters te weten.
+2. Waarna Marie verteld wat ze ervan vindt en wat zij denkt dat de betekenis van de letters is.
+3. Pas daarna wil ik mijn legenda laten zien om te vergelijken met haar ideeën.
+
+### Verloop van de test
+- Marie blijft kijken, ondanks de lange stiltes tussen de teksten.
+- Marie vraagt of de bibberende letters betekent dat Marius bang klinkt.
+- Bij de legenda herkent Marie de meeste letters wel in haar gedachten. Ze zegt alleen dat gestrest niet helemaal duidelijk was.
+- Ook vindt ze het niet duidelijk welke kleur bij welk personage hoort als dat personage niet in beeld was.
+- Marie geeft de suggestie om het er één keer bij te zetten in de ondertiteling, in plaats van de legenda. Na één keer weet je dan wat het betekent, behalve als er dan een lange tijd tussen zit.
+- Marie zegt nog wel veel geluiden te missen.
+
+### Bevindingen
+- Alleen ondertiteling is niet genoeg.
+- Het lettertype voor gestrest was voor Marie niet helemaal duidelijk, als gaf ze wel aan dat het voor haar bang zou betekenen. Ze gaf er dus meer een andere betekenis aan dan dat ze het niet begreep.
+- De legenda wordt te lang om vooraf door te nemen. Misschien ook een soort spoilers.
+- Een kleur is niet vanzelf aan een personage te koppelen.
+
+### Notities van tests van anderen
+- Een keer ondertitelen, daarna is de associatie met de animatie al gemaakt.
+- Dik gedrukt betekent belangrijker
+- Hoe animeer je geluiden buiten beeld?
+
+
+
 ## Bronnen
 - &lt;track&gt;: The Embed Text Track element. (2024, 14 maart). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track
 - Web Video Text Tracks Format (WebVTT). (2023, 26 november). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API
