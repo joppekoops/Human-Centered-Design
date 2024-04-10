@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<video controls>
+		<source src="./assets/movie.mp4" type="video/mp4" />
+		<track kind="subtitles" src="./assets/English.vtt" srclang="en" default label="English"/>
+	</video>
+	<div class="legenda">
+		<h2>legenda</h2>
+		<ul>
+			<li class="marius">personage: Marius</li>
+			<li class="jytte">personage: Jytte</li>
+			<li class="radio">Radio / Telefoon</li>
+			<li class="call">Roepen</li>
+			<li class="whisper">Fluisterend</li>
+			<li class="question">Vraag?</li>
+			<li class="unsure">Onzeker</li>
+			<li class="stressed">Gestresst</li>
+		</ul>
+	</div>
+
+	<p class="subtitles"></p>
+
+	<label><input type="checkbox" name="" id=""> Laat legenda zien</label>
+
+	<script>
+		const video = document.querySelector('video');
+		const subtitles = video.textTracks[0];
+		const p = document.querySelector('.subtitles');
+		
+		subtitles.addEventListener('cuechange', () => {
+		    console.log(subtitles.activeCues);
+		    if (subtitles.activeCues.length > 0) {
+		    	p.innerHTML = subtitles.activeCues[0].text;
+		    } else {
+		    	p.innerHTML = '';
+		    }
+		});
+
+
+	</script>
+</body>
+</html>

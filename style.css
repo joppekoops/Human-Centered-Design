@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght,GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC@8..144,-10..0,25..151,100..1000,-200..150,27..175,323..603,25..135,649..854,-305..-98,560..788,416..570,528..760&display=swap');
+
+@font-face {
+	font-family: Glitch Goblin;
+	src: url('./fonts/glitch-goblin.regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Parametric Glitch;
+	src: url('./fonts/parametric-glitch.regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Haze Morning;
+	src: url('./fonts/haze-morning.regular.ttf') format('truetype');
+}
+
+body {
+	background: black;
+}
+
+video {
+	width: 80vw;
+	border: 2px solid dodgerblue;
+}
+
+.subtitles {
+	display: none;
+}
+
+.legenda {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 1em;
+	margin: .5em;
+	margin-top: 2em;
+	border: 2px solid dodgerblue;
+	display: none;
+}
+
+body:has(:checked) .legenda {
+	display: block;
+}
+
+label {
+	color: white;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: .2em;
+}
+
+h2 {
+	font-family: Roboto Flex;
+	color: dodgerblue;
+	margin: 0;
+}
+
+ul {
+	font-size: 1.4em;
+	font-family: Roboto Flex, sans-serif;
+	color: white;
+	margin: 0;
+}
+
+li {
+	margin: .3em 0;
+}
+
+
+video::cue {
+	font-family: Roboto Flex, sans-serif;
+}
+
+video::cue(v[voice="Marius"]),
+.marius {
+	color: hsl(30deg, 80%, 60%);
+}
+
+video::cue(v[voice="Jytte"]),
+.jytte {
+	color: hsl(120deg, 80%, 40%);
+}
+
+video::cue(v.radio),
+.radio {
+	font-family: Parametric Glitch;
+}
+
+video::cue(v.call),
+.call {
+	font-weight: 800;
+}
+
+video::cue(v.whisper),
+.whisper {
+	opacity: .5;
+	font-weight: 100;
+}
+
+video::cue(v.question),
+.question {
+	font-variation-settings: 
+		'slnt' -5
+	;
+}
+
+video::cue(v.stressed),
+.stressed {
+	font-family: Haze Morning;
+}
+
+video::cue(v.unsure),
+.unsure {
+	font-variation-settings: 
+		'slnt' -10
+	;
+}
