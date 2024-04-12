@@ -15,17 +15,25 @@
 	src: url('./fonts/haze-morning.regular.ttf') format('truetype');
 }
 
-body {
-	background: black;
+* {
+	box-sizing: border-box;
 }
 
+/*body {
+	background: black;
+}
+*/
 video {
-	width: 80vw;
-	border: 2px solid dodgerblue;
+	width: 100%;
 }
 
 .subtitles {
-	display: none;
+	color: white;
+	position: absolute;
+	font-family: Roboto Flex;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
 }
 
 .legenda {
@@ -68,9 +76,65 @@ li {
 	margin: .3em 0;
 }
 
+.video-container {
+	position: relative;
+	width: min-content;
+	width: 80vw;
+	background-color: #000;
+	display: grid;
+	place-items: center;
+}
+
+.video-controls {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 1em .5em .5em .5em;
+	z-index: 999;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.playing .video-controls {
+	opacity: 0;
+	transition: opacity 1s 2s;
+}
+
+.video-controls:hover {
+	opacity: 1;
+	transition: opacity 0s 0s;
+}
+
+.video-controls button {
+	font-size: 1.2em;
+	background-color: transparent;
+	border: none;
+	color: white;
+	cursor: pointer;
+	padding: .5em;
+}
+
+.video-controls #timeline {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+}
+
+i {
+	user-select: none;
+	pointer-events: none;
+}
+
+v {
+	display: block;
+}
 
 video::cue {
 	font-family: Roboto Flex, sans-serif;
+	opacity: 0;
 }
 
 video::cue(v[voice="Marius"]),

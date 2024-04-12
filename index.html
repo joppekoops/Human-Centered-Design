@@ -5,12 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/aca5798640.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<video controls>
-		<source src="./assets/movie.mp4" type="video/mp4" />
-		<track kind="subtitles" src="./assets/English.vtt" srclang="en" default label="English"/>
-	</video>
+	<div class="video-container">
+		<video>
+			<source src="./assets/movie.mp4" type="video/mp4" />
+			<track kind="meta" src="./assets/English.vtt" srclang="en" default label="English"/>
+		</video>
+		<p class="subtitles"></p>
+		<div class="video-controls">
+			<input type="range" id="timeline">
+			<button id="play-pause"><i class="fa-solid fa-play"></i></button>
+			<button id="fullscreen"><i class="fa-solid fa-expand"></i></button>
+		</div>
+	</div>
+
 	<div class="legenda">
 		<h2>legenda</h2>
 		<ul>
@@ -25,17 +37,15 @@
 		</ul>
 	</div>
 
-	<p class="subtitles"></p>
-
 	<label><input type="checkbox" name="" id=""> Laat legenda zien</label>
 
 	<script>
+		const videoContainer = document.querySelector('.video-container');
 		const video = document.querySelector('video');
 		const subtitles = video.textTracks[0];
 		const p = document.querySelector('.subtitles');
 		
 		subtitles.addEventListener('cuechange', () => {
-		    console.log(subtitles.activeCues);
 		    if (subtitles.activeCues.length > 0) {
 		    	p.innerHTML = subtitles.activeCues[0].text;
 		    } else {
@@ -43,6 +53,52 @@
 		    }
 		});
 
+		const playPauseButton = document.getElementById('play-pause');
+
+		playPauseButton.addEventListener('click', () => {
+			if (video.paused) {
+				video.play();
+				playPauseButton.firstChild.classList.remove('fa-play');
+				playPauseButton.firstChild.classList.add('fa-pause');
+				videoContainer.classList.add('playing');
+			} else {
+				video.pause();
+				playPauseButton.firstChild.classList.remove('fa-pause');
+				playPauseButton.firstChild.classList.add('fa-play')
+				videoContainer.classList.remove('playing');
+			}
+		});
+
+		fullscreenButton = document.getElementById('fullscreen');
+
+		fullscreenButton.addEventListener('click', () => {
+			if (document.fullscreenElement) {
+				document.exitFullscreen();
+				fullscreenButton.firstChild.classList.remove('fa-compress');
+				fullscreenButton.firstChild.classList.add('fa-expand');
+			} else {
+				videoContainer.requestFullscreen();
+				fullscreenButton.firstChild.classList.remove('fa-expand');
+				fullscreenButton.firstChild.classList.add('fa-compress');
+			}
+		});
+
+
+		timeline = document.getElementById('timeline');
+		timeline.min = 0;
+		timeline.value = 0;
+		
+		video.addEventListener('loadeddata', () => {
+			timeline.max = video.duration;
+		});
+
+		video.addEventListener('timeupdate', () => {
+			timeline.value = video.currentTime;
+		});
+
+		timeline.addEventListener('input', () => {
+			video.currentTime = parseInt(timeline.value);
+		})
 
 	</script>
 </body>
