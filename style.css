@@ -27,15 +27,6 @@ video {
 	width: 100%;
 }
 
-.subtitles {
-	color: white;
-	position: absolute;
-	font-family: Roboto Flex;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-}
-
 .legenda {
 	position: fixed;
 	top: 0;
@@ -123,59 +114,67 @@ li {
 	margin: 0;
 }
 
+.subtitles {
+	color: white;
+	position: absolute;
+	font-family: Roboto Flex;
+	bottom: 2em;
+	width: 100%;
+	text-align: center;
+	font-size: 1.8em;
+	transform: translateY(-2em);
+}
+
+.playing .subtitles {
+	transform: translateY(0);
+	transition: .3s 3s;
+}
+
+.video-container:has(.video-controls:hover) .subtitles{
+	transform: translateY(-2em);
+	transition: .3s;
+}
+
 i {
 	user-select: none;
 	pointer-events: none;
 }
 
-v {
-	display: block;
-}
-
-video::cue {
-	font-family: Roboto Flex, sans-serif;
-	opacity: 0;
-}
-
-video::cue(v[voice="Marius"]),
-.marius {
+.Marius {
 	color: hsl(30deg, 80%, 60%);
 }
 
-video::cue(v[voice="Jytte"]),
-.jytte {
+.Jytte {
 	color: hsl(120deg, 80%, 40%);
 }
 
-video::cue(v.radio),
 .radio {
 	font-family: Parametric Glitch;
 }
 
-video::cue(v.call),
 .call {
 	font-weight: 800;
 }
 
-video::cue(v.whisper),
 .whisper {
-	opacity: .5;
-	font-weight: 100;
+	opacity: .7;
+	font-weight: 200;
 }
 
-video::cue(v.question),
 .question {
 	font-variation-settings: 
 		'slnt' -5
 	;
 }
 
-video::cue(v.stressed),
 .stressed {
-	font-family: Haze Morning;
+	letter-spacing: -.07em;
+	font-variation-settings: 
+		'XTRA' 323
+	;
+	transform: scale(.8, 1.2);
 }
 
-video::cue(v.unsure),
 .unsure {
 	font-variation-settings: 
 		'slnt' -10
