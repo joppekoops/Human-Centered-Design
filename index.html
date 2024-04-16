@@ -11,14 +11,15 @@
 </head>
 <body>
 	<div class="video-container">
-		<video>
+		<video muted>
 			<source src="./assets/movie.mp4" type="video/mp4" />
-			<track kind="meta" src="./assets/English.vtt" srclang="en" default label="English"/>
+			<track kind="meta" src="./assets/English.vtt" srclang="en" label="English"/>
 		</video>
 		<div class="subtitles"></div>
 		<div class="video-controls">
 			<input type="range" id="timeline">
 			<button id="play-pause"><i class="fa-solid fa-play"></i></button>
+			<div id="video-time"><span id="currentTime"></span>/<span id="maxTime"></span></div>
 			<button id="fullscreen"><i class="fa-solid fa-expand"></i></button>
 		</div>
 	</div>
@@ -44,6 +45,8 @@
 		const video = document.querySelector('video');
 		const subtitles = video.textTracks[0];
 		const p = document.querySelector('.subtitles');
+
+		subtitles.mode = 'hidden';
 		
 		subtitles.addEventListener('cuechange', () => {
 		    if (subtitles.activeCues.length > 0) {
@@ -83,17 +86,36 @@
 			}
 		});
 
+		const leadingZeroFormatter = new Intl.NumberFormat(undefined, {
+		  minimumIntegerDigits: 2,
+		});
 
-		timeline = document.getElementById('timeline');
+		const timeToString = (time) => {
+			const seconds = time % 60;
+			const minutes = Math.floor(time / 60) % 60;
+			const hours = Math.floor(time / 3600);
+			if (hours === 0) {
+				return `${minutes}:${leadingZeroFormatter.format(seconds)}`;
+			} else {
+				return `${hours}:${leadingZeroFormatter.format(minutes)}:${leadingZeroFormatter.format(seconds)}`;
+			}
+		};
+
+		const timeline = document.getElementById('timeline');
+		const maxTimeEl = document.getElementById('maxTime');
+		const currentTimeEl = document.getElementById('currentTime');
 		timeline.min = 0;
 		timeline.value = 0;
+		currentTimeEl.textContent = timeToString(0);
 		
 		video.addEventListener('loadeddata', () => {
 			timeline.max = video.duration;
+			maxTimeEl.textContent = timeToString(Math.round(video.duration));
 		});
 
 		video.addEventListener('timeupdate', () => {
 			timeline.value = video.currentTime;
+			currentTimeEl.textContent = timeToString(Math.round(video.currentTime));
 		});
 
 		timeline.addEventListener('input', () => {
