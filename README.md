@@ -16,6 +16,9 @@ Voor onze eerste ontmoeting met Marie hadden we van iedereen met dezelfde case v
 - Begrijp je de huidige muziek/effecten die worden omschreven in de ondertiteling zoals [spannende muziek] of [er wordt geklopt]?
 
 ### Aantekeningen
+| ![](./readme-images/interview_1.webp) | ![](./readme-images/interview_2.webp) | ![](./readme-images/interview_3.webp) |
+| --- | --- | --- |
+| ![](./readme-images/interview_4.webp) | ![](./readme-images/interview_5.webp) | |
 
 ### Belangrijkste bevindingen
 
@@ -155,15 +158,28 @@ Naast de mogelijkheden uit de legenda kunnen ook verschillende versies worden ge
 ### Test plan
 1. Ik heb twee stukjes film die ik ga laten zien waarin de verbeteringen goed zichtbaar zijn.
 	- ```0:57 --> 3:36``` Hier zijn de *closed captions* goed te zien met animaties en posities.
-	- ```4:11 --> 4:51``` Om de verbetering in het telefoon gesprek te testen.
+	- ```4:11 --> 4:51``` Om de verbetering in het telefoongesprek te testen.
 2. Daarna verteld Marie wat ze er van vindt.
 3. Als laatste heb ik nog een aantal vragen:
 	- Wat vind je van de teksten die op andere plekken in het scherm staan?
 	- Zijn de omschreven geluiden, zoals bijvoorbeeld ```[Car door opens]``` duidelijk?
-	- Heb je een idee wat het betekend als er bijvoorbeeld ```[Wroom]``` bij de auto, of ```[Woof]``` bij de hond staat?
-	- Wat betekend de opmaak van de tekst ```It's the youngest. One of the two foster children.``` (4:22)?
+	- Heb je een idee wat het betekent als er bijvoorbeeld ```[Wroom]``` bij de auto, of ```[Woof]``` bij de hond staat?
+	- Wat betekent de opmaak van de tekst ```It's the youngest. One of the two foster children.``` (4:22)?
 	- Muziek mist nu nog en maakt het vaak de film spannend. Wat is voor jou spannend? Of: wat maakt jou bang?
 
+### Notities
+| ![](./readme-images/test2_1.webp) | ![](./readme-images/test2_2.webp) |
+| --- | --- |
+| ![](./readme-images/test2_3.webp) | ![](./readme-images/test2_4.webp) |
+
+### Bevindingen
+- De *closed captions* maken de ervaring veel beter!
+- Als een geluid heel specifiek is (```[woof]``` kan alleen maar een hond zijn) dan is een uitgeschreven geluid genoeg, maar bij minder specifieke geluiden is het nodig om ze te omschrijven. Als dit geluid in beeld duidelijk ook te zien is, is die beschrijving weer niet nodig.
+- De positionering van de geluiden is wel fijn en maakt duidelijk waar geluiden vandaan komen.
+- Het animeren van de positie van geluiden voegt wel wat toe, omdat het geluid ook verplaatst. Wel moet ik opletten dat de animatie niet de tekst onleesbaar maakt.
+- Letters die groter en kleiner worden zijn niet goed leesbaar.
+- De gestreste tekst komt nog steeds niet goed over. Er is wel duidelijk dat het gefluisterd wordt. De op elkaar gedrukte letters zijn wel nog goed leesbaar.
+- Muziek in alleen kleur uitdrukken werkt niet. Iedereen koppelt er namelijk andere kleuren aan. Een animatie met gradient voor vrolijke muziek werkt wel.
 
 ## Bronnen
 - &lt;track&gt;: The Embed Text Track element. (2024, 14 maart). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track
