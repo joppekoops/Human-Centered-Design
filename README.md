@@ -143,6 +143,26 @@ Naast de mogelijkheden uit de legenda kunnen ook verschillende versies worden ge
 - Dik gedrukt betekent belangrijker
 - Hoe animeer je geluiden buiten beeld?
 
+## Feedback van Tamara (11-04-2024)
+
+## Tweede prototype
+
+## Feedback van Eric (12-04-2024)
+
+
+## User test 2 (17-04-2024)
+
+### Test plan
+1. Ik heb twee stukjes film die ik ga laten zien waarin de verbeteringen goed zichtbaar zijn.
+	- ```0:57 --> 3:36``` Hier zijn de *closed captions* goed te zien met animaties en posities.
+	- ```4:11 --> 4:51``` Om de verbetering in het telefoon gesprek te testen.
+2. Daarna verteld Marie wat ze er van vindt.
+3. Als laatste heb ik nog een aantal vragen:
+	- Wat vind je van de teksten die op andere plekken in het scherm staan?
+	- Zijn de omschreven geluiden, zoals bijvoorbeeld ```[Car door opens]``` duidelijk?
+	- Heb je een idee wat het betekend als er bijvoorbeeld ```[Wroom]``` bij de auto, of ```[Woof]``` bij de hond staat?
+	- Wat betekend de opmaak van de tekst ```It's the youngest. One of the two foster children.``` (4:22)?
+	- Muziek mist nu nog en maakt het vaak de film spannend. Wat is voor jou spannend? Of: wat maakt jou bang?
 
 
 ## Bronnen
