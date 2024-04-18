@@ -158,14 +158,16 @@ Naast de mogelijkheden uit de legenda kunnen ook verschillende versies worden ge
 | ![Screenshot van het tweede prototype met tekst knock of de de video](./readme-images/prototype2_1.webp) | ![Screenshot van het tweede prototype met de tekst holy crap op de video bij de actuer](./readme-images/prototype2_2.webp) |
 | --- | --- |
 
+[Bekijk het prototype](https://joppekoops.github.io/Human-Centered-Design/prototype%202/)
+
 In dit tweede prototype heb ik een aantal verbeteringen doorgevoerd voor het uitdrukken van de emoties van personages in tekst. Daarnaast heb ik nieuwe experimenten gedaan met het toevoegen van *closed captions*.
 
 ### Verbeteringen
-Om duidelijk te maken welke kleur bij welk personage hoort heb ik de eerste keer dat het personage voor komt de naam van het personage er bij gezet. Ook wanneer dit personage lang niets heeft gezegd staat de naam er opnieuw bij.
+Om duidelijk te maken welke kleur bij welk personage hoort, heb ik de eerste keer dat het personage voor komt de naam van het personage er bij gezet. Ook wanneer dit personage lang niets heeft gezegd staat de naam er opnieuw bij.
 
 ![Screenshot van ondertiteling met naam er bij](./readme-images/prototype2_sub-with-name.webp)
 
-Verder kwam uit de test dat de opmaak van de gestresde tekst niet duidelijk was. Hiervoor heb ik een nieuwe versie gemaakt. Marie gaf zelf aan dat het goed zou zijn om het er de eerste keer bij te zetten, maar ik denk dat als het echt goed duidelijk is, dat helemaal niet nodig is. Dan is ook de legenda overbodig. Daarbij is het wel belangrijk om dit goed te testen.
+Verder kwam uit de test dat de opmaak van de gestreste tekst niet duidelijk was. Hiervoor heb ik een nieuwe versie gemaakt. Marie gaf zelf aan dat het goed zou zijn om het er de eerste keer bij te zetten, maar ik denk dat als het echt goed duidelijk is, dat helemaal niet nodig is. Dan is ook de legenda overbodig. Daarbij is het wel belangrijk om dit goed te testen.
 
 ![Screenshot van nieuwe vorgeving gestresde ondertiteling](./readme-images/prototype2_stressed-sub.webp)
 
@@ -174,7 +176,7 @@ Uit de test bleek dat alleen het dialoog voor Marie niet genoeg is. *Closed capt
 
 Ik heb op een aantal verschillende manieren *captions* toegevoegd. 
 
-- Bestaande captions omschrijven vaak het geluid. Mijn idee was dat het veel leuker zou zijn om het geluid letterlijk op te schrijven. Zo staat bij de blaffende hond nu ```[woof]``` en bij de auto ```[wroom]```.
+- Bestaande *captions* omschrijven vaak het geluid. Mijn idee was dat het veel leuker zou zijn om het geluid letterlijk op te schrijven. Zo staat bij de blaffende hond nu ```[woof]``` en bij de auto ```[wroom]```.
 - Niet alle geluiden vond ik goed op te schrijven. Daarom heb ik sommige geluiden wel omschreven, zoals ```[car door opens]```. Uit de test moet blijken wat beter werkt.
 - Wij kunnen makkelijk horen waar geluid vandaan komt, maar met *captions* is dat niet duidelijk. Daarom heb ik een overlay gemaakt, waarbij de *captions* over de video heen komen, op de plek waar het geluid vandaan komt. Dit zou natuurlijk als te druk kunnen worden ervaren.
 - Hierin ben ik ook nog een stap verder gegaan, waarbij ik de *captions* mee animeer als de locatie van het geluid veranderd. In dit prototype is het goed te zien als de auto rijdt. Dit kan natuurlijk nog meer afleidend zijn.
