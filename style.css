@@ -22,10 +22,15 @@
 
 body {
 	font-family: Roboto Flex, sans-serif;
+	display: grid;
+	place-items: center;
+	min-height: 100svh;
+	margin: 0;
 }
 
 video {
 	width: 100%;
+	padding: 2em;
 }
 
 .legenda {
@@ -129,15 +134,24 @@ li {
 	margin-right: auto;
 }
 
+.content-container {
+	height: min-content;
+	position: relative;
+	display: grid;
+	place-items: center;
+}
+
 .subtitles {
 	color: white;
 	position: absolute;
 	font-family: Roboto Flex;
-	height: 100%;
 	width: 100%;
+	height: 100%;
 	text-align: center;
 	font-size: 1.8em;
 	z-index: 3;
+	padding: 2rem;
+	overflow: hidden;
 /*	transform: translateY(-2em);*/
 }
 

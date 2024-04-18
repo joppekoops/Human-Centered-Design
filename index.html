@@ -11,11 +11,13 @@
 </head>
 <body>
 	<div class="video-container">
-		<video muted>
-			<source src="./assets/movie.mp4" type="video/mp4" />
-			<track kind="meta" src="./assets/English.vtt" srclang="en" label="English"/>
-		</video>
-		<div class="subtitles"></div>
+		<div class="content-container">
+			<video>
+				<source src="./assets/movie.mp4" type="video/mp4" />
+				<track kind="meta" src="./assets/English.vtt" srclang="en" label="English"/>
+			</video>
+			<div class="subtitles"></div>
+		</div>
 		<div class="video-controls">
 			<input type="range" id="timeline">
 			<button id="play-pause"><i class="fa-solid fa-play"></i></button>
@@ -24,7 +26,7 @@
 		</div>
 	</div>
 
-	<div class="legenda">
+	<!-- <div class="legenda">
 		<h2>Legenda</h2>
 		<ul>
 			<li class="Marius">personage: Marius</li>
@@ -38,13 +40,14 @@
 		</ul>
 	</div>
 
-	<label><input type="checkbox" name="" id=""> Laat legenda zien</label>
+	<label><input type="checkbox" name="" id=""> Laat legenda zien</label> -->
 
 	<script>
 		const videoContainer = document.querySelector('.video-container');
 		const video = document.querySelector('video');
 		const subtitles = video.textTracks[0];
 		const p = document.querySelector('.subtitles');
+		const body = document.querySelector('body');
 
 		subtitles.mode = 'hidden';
 		
@@ -120,7 +123,47 @@
 
 		timeline.addEventListener('input', () => {
 			video.currentTime = parseInt(timeline.value);
-		})
+		});
+
+		// Establish all variables that your Analyser will use
+		let analyser;
+		// Initialize the MP3 player after the page loads all of its HTML into the window
+		window.addEventListener("load", initMp3Player, false);
+
+		function initMp3Player(){
+			const context = new AudioContext(); // AudioContext object instance
+			analyser = context.createAnalyser(); // AnalyserNode method
+			// Re-route audio playback into the processing graph of the AudioContext
+			const source = context.createMediaElementSource(video); 
+			source.connect(analyser);
+			analyser.connect(context.destination);
+			frameLooper();
+		}
+		// frameLooper() animates any style of graphics you wish to the audio frequency
+		// Looping at the default frame rate that the browser provides(approx. 60 FPS)
+		function frameLooper(){
+			window.requestAnimationFrame(frameLooper);
+			const fbc_array = new Uint8Array(analyser.frequencyBinCount);
+			analyser.getByteFrequencyData(fbc_array);
+
+			let sum = 0;
+
+			for (var i = 0; i < 512; i++) {
+				sum += fbc_array[i] * fbc_array[i];
+			}
+
+		    // for (const amplitude of fbc_array) {
+		    //   sum += amplitude * amplitude;
+		    // }
+
+		    const volume = Math.sqrt(sum / fbc_array.length);
+
+			videoContainer.style.backgroundColor = `hsl(${volume/2 - 20} 100 ${volume/2 - 20}`;
+
+			navigator.vibrate(volume / 2 - 20);
+		}
+		
+
 
 	</script>
 </body>
