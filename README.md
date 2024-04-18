@@ -1,6 +1,24 @@
 # Human-Centered-Design
+Dit is een opdracht voor het vak 'Human Centered Design' van de minor 'Web Design & Development': https://everythingweb.org/
 
-## 💬 Interview met Marie van Driessche
+Bekijk mijn resultaat op: https://joppekoops.github.io/Human-Centered-Design/
+
+## De opdracht
+Normaal ontwerpen we voor iedereen (*inclusive design*), maar voor dit vak is de opdracht juist om voor een individu iets te maken (*exclusive design*). De bedoeling is om een **applicatie** te maken **op basis van de voorkeuren van één persoon met een beperking**.
+
+Mijn opdracht was om een applicatie te ontwerpen voor Marie. Marie is doof, maar wil graag dat ze geluid in films net zo kan ervaren als mensen die wel geluid horen. In de vier weken voor deze opdracht had ik vier keer de tijd om met Marie te spreken en prototypes te testen.
+
+Voor de opdracht werken we met de ***exclusive design principles***:
+
+- *Study situation*
+- *Ignore conventions*
+- *Prioritise identity*
+- *Add nonsense*
+
+Deze vier principles zijn opgesteld door Vasilis van Gemert ([Exclusive Design, z.d.](https://exclusive-design.vasilis.nl/)).
+
+
+## Interview met Marie van Driessche
 Voor onze eerste ontmoeting met Marie hadden we van iedereen met dezelfde case vragen verzameld voor een interview.
 
 ### Vragen
@@ -153,6 +171,7 @@ Naast de mogelijkheden uit de legenda kunnen ook verschillende versies worden ge
 
 ## Feedback van Tamara (11-04-2024)
 
+
 ## Tweede prototype
 
 | ![Screenshot van het tweede prototype met tekst knock of de de video](./readme-images/prototype2_1.webp) | ![Screenshot van het tweede prototype met de tekst holy crap op de video bij de actuer](./readme-images/prototype2_2.webp) |
@@ -238,3 +257,4 @@ Om het compleet te maken, heb ik hier een *custom video player* omheen gezet, en
 ## Bronnen
 - &lt;track&gt;: The Embed Text Track element. (2024, 14 maart). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track
 - Web Video Text Tracks Format (WebVTT). (2023, 26 november). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API
+- Van Gemert, V. (z.d.). Exclusive design. https://exclusive-design.vasilis.nl/
