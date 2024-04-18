@@ -107,6 +107,11 @@ Bron: [MDN, 2023](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API#st
 
 
 ## Eerste prototype
+
+![Screenshot van eerste prototype](./readme-images/prototype1.webp)
+
+[Bekijk het prototype](https://joppekoops.github.io/Human-Centered-Design/prototype%201/)
+
 Voor dit eerste prototype heb ik met *WebVTT* geprobeerd de emoties van de personages beter duidelijk te maken in de ondertiteling door gebruik van lettertypes en kleuren. Om duidelijk te maken welk personage wat zegt, heb ik per personage één kleur uitgekozen. Voor de emoties was het idee om die uit te drukken in het lettertype. Hiervoor gebruik ik verschillende lettertypes, waaronder één variabele met veel mogelijkheden.
 
 Origineel wilde ik nog meer variaties maken met ```letter-spacing```, ```font-size```, ```text-transform``` etc. Helaas blijkt *vtt* toch wat minder goed vorm te geven dan ik had gedacht en werken al deze *properties* niet.
@@ -150,6 +155,52 @@ Naast de mogelijkheden uit de legenda kunnen ook verschillende versies worden ge
 
 ## Tweede prototype
 
+| ![Screenshot van het tweede prototype met tekst knock of de de video](./readme-images/prototype2_1.webp) | ![Screenshot van het tweede prototype met de tekst holy crap op de video bij de actuer](./readme-images/prototype2_2.webp) |
+| --- | --- |
+
+In dit tweede prototype heb ik een aantal verbeteringen doorgevoerd voor het uitdrukken van de emoties van personages in tekst. Daarnaast heb ik nieuwe experimenten gedaan met het toevoegen van *closed captions*.
+
+### Verbeteringen
+Om duidelijk te maken welke kleur bij welk personage hoort heb ik de eerste keer dat het personage voor komt de naam van het personage er bij gezet. Ook wanneer dit personage lang niets heeft gezegd staat de naam er opnieuw bij.
+
+![Screenshot van ondertiteling met naam er bij](./readme-images/prototype2_sub-with-name.webp)
+
+Verder kwam uit de test dat de opmaak van de gestresde tekst niet duidelijk was. Hiervoor heb ik een nieuwe versie gemaakt. Marie gaf zelf aan dat het goed zou zijn om het er de eerste keer bij te zetten, maar ik denk dat als het echt goed duidelijk is, dat helemaal niet nodig is. Dan is ook de legenda overbodig. Daarbij is het wel belangrijk om dit goed te testen.
+
+![Screenshot van nieuwe vorgeving gestresde ondertiteling](./readme-images/prototype2_stressed-sub.webp)
+
+### Toevoegen van *closed captions*
+Uit de test bleek dat alleen het dialoog voor Marie niet genoeg is. *Closed captions* is een toevoeging om ook geluiden te omschrijven. Uit het interview een week eerder bleek helaas dat dit vaak niet goed wordt gedaan. Het doel is om te testen wat hierin wel zou werken.
+
+Ik heb op een aantal verschillende manieren *captions* toegevoegd. 
+
+- Bestaande captions omschrijven vaak het geluid. Mijn idee was dat het veel leuker zou zijn om het geluid letterlijk op te schrijven. Zo staat bij de blaffende hond nu ```[woof]``` en bij de auto ```[wroom]```.
+- Niet alle geluiden vond ik goed op te schrijven. Daarom heb ik sommige geluiden wel omschreven, zoals ```[car door opens]```. Uit de test moet blijken wat beter werkt.
+- Wij kunnen makkelijk horen waar geluid vandaan komt, maar met *captions* is dat niet duidelijk. Daarom heb ik een overlay gemaakt, waarbij de *captions* over de video heen komen, op de plek waar het geluid vandaan komt. Dit zou natuurlijk als te druk kunnen worden ervaren.
+- Hierin ben ik ook nog een stap verder gegaan, waarbij ik de *captions* mee animeer als de locatie van het geluid veranderd. In dit prototype is het goed te zien als de auto rijdt. Dit kan natuurlijk nog meer afleidend zijn.
+
+Deze *captions* vallen helaas niet meer onder de standaard van *WebVTT*. Ze staan nog wel een *vtt*-bestand, maar met *HTML* elementen als de *ques*.
+
+```html
+7
+00:01:11.291 --> 00:01:16.916
+<div style="bottom: 35%; animation-name: carFirst; animation-duration: 4s;">[Wroom]</div>
+```
+
+Met *JavaScript* is het vervolgens simpel om de *ques* uit te lezen en als overlay toe te voegen.
+
+```js
+subtitles.addEventListener('cuechange', () => {
+	if (subtitles.activeCues.length > 0) {
+		p.innerHTML = subtitles.activeCues[0].text;
+	} else {
+		p.innerHTML = '';
+	}
+});
+```
+
+Om het compleet te maken, heb ik hier een *custom video player* omheen gezet, en de *controls* van de standaard *player* verborgen. Zo komen de *captions* ook mee op *full screen*.
+
 ## Feedback van Eric (12-04-2024)
 
 
@@ -173,12 +224,13 @@ Naast de mogelijkheden uit de legenda kunnen ook verschillende versies worden ge
 | ![](./readme-images/test2_3.webp) | ![](./readme-images/test2_4.webp) |
 
 ### Bevindingen
-- De *closed captions* maken de ervaring veel beter!
+- De *closed captions* maken de ervaring veel beter! Alle kleine geluidjes zorgen voor spanning.
 - Als een geluid heel specifiek is (```[woof]``` kan alleen maar een hond zijn) dan is een uitgeschreven geluid genoeg, maar bij minder specifieke geluiden is het nodig om ze te omschrijven. Als dit geluid in beeld duidelijk ook te zien is, is die beschrijving weer niet nodig.
 - De positionering van de geluiden is wel fijn en maakt duidelijk waar geluiden vandaan komen.
 - Het animeren van de positie van geluiden voegt wel wat toe, omdat het geluid ook verplaatst. Wel moet ik opletten dat de animatie niet de tekst onleesbaar maakt.
 - Letters die groter en kleiner worden zijn niet goed leesbaar.
 - De gestreste tekst komt nog steeds niet goed over. Er is wel duidelijk dat het gefluisterd wordt. De op elkaar gedrukte letters zijn wel nog goed leesbaar.
+- Marie miste nog de muziek. Ze vroeg of er muziek in de scene zat, waarschijnlijk omdat er af en toe nog lange stiltes vielen.
 - Muziek in alleen kleur uitdrukken werkt niet. Iedereen koppelt er namelijk andere kleuren aan. Een animatie met gradient voor vrolijke muziek werkt wel.
 
 ## Bronnen
