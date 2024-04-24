@@ -170,7 +170,9 @@ Naast de mogelijkheden uit de legenda kunnen ook verschillende versies worden ge
 - Hoe animeer je geluiden buiten beeld?
 
 ## Feedback van Tamara (11-04-2024)
+Tamara kwam nog met nieuwe informatie op het idee om muziek te visualiseren met kleuren. Er bestaan een neurologische aandoening, waarbij ongewild bij waarneming via één zintuig, ook dingen worden waargenomen door andere zintuigen. Waardoor sommige mensen bij het horen van muziek ook kleuren zien. Misschien dat ik daar inspiratie uit kan halen.
 
+[Wikipedia-artikel over synesthesie](https://nl.wikipedia.org/wiki/Synesthesie_(zintuig))
 
 ## Tweede prototype
 
@@ -223,7 +225,7 @@ subtitles.addEventListener('cuechange', () => {
 Om het compleet te maken, heb ik hier een *custom video player* omheen gezet, en de *controls* van de standaard *player* verborgen. Zo komen de *captions* ook mee op *full screen*.
 
 ## Feedback van Eric (12-04-2024)
-
+Ik ben goed op weg. Het is erg belangrijk om verschillende opties voor *captions* te testen. Waarschijnlijk maakt het een stuk beter, maar met verschillende fontjes en animaties is het belangrijk om te testen of de teksten nog leesbaar zijn en of het duidelijk is wat ze betekenen.
 
 ## User test 2 (17-04-2024)
 
@@ -256,10 +258,20 @@ Om het compleet te maken, heb ik hier een *custom video player* omheen gezet, en
 
 ## Derde prototype
 
+![prototype 3](./readme-images/prototype3.webp)
+
+[Bekijk het prototype](https://joppekoops.github.io/Human-Centered-Design/)
+
+De trillingen werken alleen op Chrome op mobiel!
+
+
+### Verbeteringen *Closed Caption*
+Uit de vorige test was gekomen dat er soms meer en soms juist minder omschrijvingen nodig waren. Op de aangegeven plekken heb ik dat aangepast. Verder heb ik, omdat de geanimeerde tekst zo goed werkte nog wat extra *captions* toegevoegd en geanimeerd.
+
 ### Spanning in muziek visualiseren en voelbaar maken
 Naast de ondertiteling en *captions* wilde ik graag nog iets toevoegen om de muziek voor Marie duidelijk te maken. Uit de test bleek dat muziek nog een heel belangrijk onderdeel is voor de spanning van het stukje film. Zonder vallen er nog lange stiltes. Uit de testen van anderen kwamen ook wat voorbeelden naar voren van hoe het wel en niet moet. Tempo en ritme blijkt een belangrijk onderdeel voor Marie.
 
-Het stukje film wat ik heb gekozen heeft niet zoveel tempo en ritme in de muziek zitten. De muziek bestaat vooral uit wat lage aanzwellende tonen. Om dit naar voren te brengen heb ik twee dingen geprobeerd, beide gemaakt met hetzelfde scriptje. Hoewel de *captions* heel handmatig toegevoegd moeten worden, zou deze oplossing voor elk stukje geluid kunnen werken. In het scriptje analyseer ik het geluid, waar ik vervolgens de achtergrondkleur en de trilmotor van een telefoon mee aan kan sturen.
+Het stukje film wat ik heb gekozen heeft niet zoveel tempo en ritme in de muziek zitten. De muziek bestaat vooral uit wat lage aanzwellende tonen. Om dit naar voren te brengen heb ik twee dingen geprobeerd, beide gemaakt met hetzelfde scriptje. Hoewel de *captions* heel handmatig toegevoegd moeten worden, zou deze oplossing voor elk stukje geluid kunnen werken. In het scriptje analyseer ik het volume van het geluid, waar ik vervolgens de achtergrondkleur en de trilmotor van een telefoon mee aan kan sturen. Hiervoor heb ik wel met https://vocalremover.org/ de stemmen er uit gefilterd, daarvan wil ik niet dat het mee gaat trillen.
 
 Het volume visualiseren met de lichtheid van de achtergrondkleur is natuurlijk iets wat voor veel muziek wordt gedaan, maar trillingen heb ik minder gezien. Ooit heb ik een telefoon gehad, die een instelling had om dit aan te zetten, maar naar mijn idee kreeg ik maar heel af en toe een trilling die dan volledig willekeurig leek.
 
@@ -268,6 +280,54 @@ Zelf vind ik zowel de achtergrond als de trillingen veel te afleidend, maar ik m
 ## Feedback Vasilis (19-04-2024)
 De punten waarvan ik zelf zei dat ze waarschijnlijk te ver gaan, zouden volgens Vasilis prima kunnen werken. Dat soort ideeën zou ik vaker moeten proberen, zeker voor een test met een prototype. Zo kom je juist op nieuwe interessante bevindingen.
 
+## User test 3 (24-04-2024)
+
+### Test plan
+1. **Korte herhaling** van vorige tests: Vorige twee tests had ik met tekst omschreven wat er gebeurt. Zowel met geluiden als de stemmen van de acteurs. Deze keer heb ik dit op een hele andere manier geprobeerd.
+2. **Het stukje kijken**. Het doel van deze test is om er achter te komen wat er wel en niet werkt aan de visualisatie van de muziek en het trillen op de muziek. Zonder van tevoren uit te leggen wat ik precies heb gedaan hoop ik te ontdekken wat ze er echt van vindt en ze begrijpt wat er gebeurt.
+3. **Feedback van Marie**
+4. **Korte uitleg van techniek**: De app luistert naar het geluid van het filmpje en het volume daarvan. Als dit harder is dan een bepaalde grenswaarde gaat de telefoon trillen. 
+Ik denk dat het goed is om uit te leggen, zodat duidelijk is waar de trillingen vandaan komen.
+
+### Verloop van de test
+Marie heeft gelijk door wat de trillingen moeten zijn als de auto in het begin van de scene voorbij rijdt. Daarna vraagt ze een aantal keren wat de trilling op dat moment betekent, bijvoorbeeld wanneer Marius zich omdraait en ergens tegenaan stoot of wanneer hij op de deur klopt. Marie zegt het fragment graag uit te willen kijken om te zien wat er bij het laatste stukje gebeurt.
+
+Marie zegt dat ze soms niet helemaal begrijpt waarom de telefoon dan trilt. Als ik uitleg dat het om volume in geluid gaat en dat het dus kan komen omdat er dan muziek is, begrijpt ze wel waar het door komt.
+
+### Bevindingen
+- Trillingen werken niet voor elk hard geluid. Alleen als de trilling hetzelfde aanvoelt als dat het geluid klinkt. Voorbeelden hiervan zijn de motor van de auto en aanzwellende tonen voor spanning. Vaak werkt het bij langer durende geluiden en trillende wel en niet bij korte geluiden, zoals iets dat valt, schoten of geklop.
+- Soms hebben bepaalde functionaliteiten een uitleg nodig om duidelijk te zijn. Het was bijvoorbeeld niet gelijk duidelijk dat trillingen betekenen dat het geluid hard is.
+- *Captions* moeten niet over iemands gezicht vallen.
+
+
+## Conclusie en Aanbevelingen
+Uit alle tests valt te concluderen dat 50% van een film het geluid is. Omdat Marie doof is, krijgt ze dus de helft van het geluid niet mee. Deze ervaring is zeer goed te verbeteren door goede *closed captions*. Uit de bevindingen blijkt dat je, als je *captions* maakt, moet denken als een sounddesigner, die het geluid bij de film maakt. Hierbij zijn een aantal dingen belangrijk:
+
+- Alle geluiden zijn belangrijk. De spanning van een film, zit in het geluid. Alle kleine geluidjes zorgen voor die spanning.
+- De positie van het geluid kan duidelijk worden gemaakt door te tekst op die plek op het beeld te positioneren.
+- Als iets binnen beeld gebeurt, kan het geluid fonetisch worden omschreven. Gebeurt een geluid buiten beeld, dan moet hier een omschrijving bij staan, omdat het dan niet zichtbaar is wat het geluid maakt.
+- Associaties met kleuren en fonts zijn persoonlijk en moeten dus op de voorkeuren van de persoon worden aangepast, of de eerste keer dat ze worden gebruikt, worden gelabeld.
+
+Technisch blijkt er van alles mogelijk te zijn met het bestaande *WebVTT* formaat, alleen wordt hier nooit gebruik van gemaakt. Dit zou vaker moeten gebeuren, net als dat bij elke film geluiden worden gemaakt. Eigenlijk zou tegelijkertijd, als je er toch mee bezig bent, elk geluid moeten worden omschreven. Helaas zijn de programma's om die ondertiteling te maken wat minder geavanceerd.
+
+Tot slot is muziek nog een belangrijke factor in het geluid van een film. Hierbij kunnen trillingen een goede uitkomst zijn, maar dit blijkt niet altijd zo te zijn. Hiervoor zou verder moeten worden onderzocht wanneer er wel trillingen moeten zijn en wanneer niet. Het belangrijkste is volgens Marie dat de trilling zo moet voelen als het geluid klinkt. Dit zou kunnen door in het script te herkennen hoe lang een geluid is, of door een speciale audio track te maken met alleen de geluiden die trillingen moeten veroorzaken. Die zou door een sounddesigner van een film makkelijk kunnen worden geëxporteerd.
+
+
+## Reflectie op principes voor exclusive design
+
+### *Study situation*
+Aan het begin van het onderzoek, ben ik begonnen met een interview met Marie en een *user trip* waarin ik zelf ben gaan kijken naar de huidige situatie. Ik denk dat hierin goed naar voren is gekomen hoe Marie op dit moment films kijkt en wat ze mist aan die ervaring. In het interview kwam Marie bijvoorbeeld met dat *closed captions* vaak niet goed zijn, met als voorbeeld de tekst [spannende muziek]. Uit de *user trip* bleek voor mij hetzelfde. Later in het tweede prototype heb ik geprobeerd dit zo goed mogelijk te verbeteren en leuker te maken.
+
+### *Ignore conventions*
+Ik ben dan wel begonnen vanuit de huidige situatie, maar heb die al gauw over boord gegooid omdat die zo slecht was. Alle *captions* staan nu altijd onderin of zelfs onder het beeld, waarschijnlijk zodat ze niet afleiden van de film. Juist door te proberen de teksten in de film te zetten, ben ik er achter gekomen dat dit voor Marie helemaal niet afleidend maakt, maar juist duidelijker. 
+Aan de andere kant ben ik er ook achter gekomen dat sommige regels wel ergens op slaan, namelijk het labelen van alle iconen. In de ondertiteling stonden geen iconen, maar wel andere ontwerpen die een betekenis hadden. Iedereen koppelt hier weer een andere betekenis aan.
+
+### *Prioritise Identity*
+In het onderzoek bleek al gauw dat associaties met kleuren, lettertypes etc. niet voor iedereen hetzelfde zijn. In mijn prototypes heb ik hier rekening mee gehouden, zodat het voor Marie goed te begrijpen is. De tekst voor gestreste personages heeft bijvoorbeeld drie iteraties gezien, voordat het voor Marie duidelijk was wat het betekende. Ik had er ook een beschrijving bij kunnen zetten, zodat het voor iedereen duidelijk is, maar dat zou voor Marie juist de ervaring minder goed maken. De huidige ondertiteling werkt dan ook alleen voor Marie en mijzelf als ontwerper er van.
+
+### *Add Nonsense*
+Vooral naar het einde van de opdracht toe heb ik meer, wat eerst *nonsense* leek, toegevoegd. De animaties van *captions* bijvoorbeeld, leken niet nodig omdat het toch wel duidelijk is waar een geluid vandaan komt als het al op die plek staat. Bij de rijdende auto is het logisch dat de tekst [wroom] bij de auto hoort. Toch is het erg leuk dat de tekst ook daadwerkelijk met de auto meebeweegt.
+Een ander goed voorbeeld zijn de trillingen. Zelf vind ik het een vervelende ervaring en voor mij voegt het niets toe, maar toch zijn er zeer bruikbare test resultaten uit gekomen.
 
 ## Bronnen
 - &lt;track&gt;: The Embed Text Track element. (2024, 14 maart). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track
@@ -276,3 +336,4 @@ De punten waarvan ik zelf zei dat ze waarschijnlijk te ver gaan, zouden volgens 
 - Visualizations with Web Audio API - Web APIs | MDN. (2024, 15 januari). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Visualizations_with_Web_Audio_API
 - Adam Khoury. (2013, 16 juli). Analyser Bars animation HTML5 Audio API JavaScript tutorial [Video]. YouTube. https://www.youtube.com/watch?v=IBHpSkGZtNM
 - Vibration API - Web APIs | MDN. (2024, 11 april). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API
+- Wikipedia-bijdragers. (2024, februari 23). Synesthesie (zintuig). Wikipedia. https://nl.wikipedia.org/wiki/Synesthesie_(zintuig)
