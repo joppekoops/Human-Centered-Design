@@ -31,6 +31,7 @@ body {
 video {
 	width: 100%;
 	padding: 2em;
+	max-height: 100vh;
 }
 
 .legenda {
@@ -80,7 +81,6 @@ li {
 
 .video-container {
 	position: relative;
-	width: min-content;
 	width: 80vw;
 	background-color: #000;
 	display: grid;
@@ -128,6 +128,7 @@ li {
 	left: 0;
 	width: 100%;
 	margin: 0;
+	accent-color: red;
 }
 
 .video-controls #video-time {
@@ -248,5 +249,11 @@ i {
 	100% {
 		bottom: 35%;
 		left: 20%;
+	}
+}
+
+@media (width < 1000px) {
+	.subtitles {
+		font-size: 1.2em;
 	}
 }

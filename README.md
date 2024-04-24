@@ -252,9 +252,27 @@ Om het compleet te maken, heb ik hier een *custom video player* omheen gezet, en
 - Letters die groter en kleiner worden zijn niet goed leesbaar.
 - De gestreste tekst komt nog steeds niet goed over. Er is wel duidelijk dat het gefluisterd wordt. De op elkaar gedrukte letters zijn wel nog goed leesbaar.
 - Marie miste nog de muziek. Ze vroeg of er muziek in de scene zat, waarschijnlijk omdat er af en toe nog lange stiltes vielen.
-- Muziek in alleen kleur uitdrukken werkt niet. Iedereen koppelt er namelijk andere kleuren aan. Een animatie met gradient voor vrolijke muziek werkt wel.
+- Muziek in alleen kleur uitdrukken werkt niet. Iedereen koppelt er namelijk andere kleuren aan. Een animatie met *gradient* voor vrolijke muziek werkt wel.
+
+## Derde prototype
+
+### Spanning in muziek visualiseren en voelbaar maken
+Naast de ondertiteling en *captions* wilde ik graag nog iets toevoegen om de muziek voor Marie duidelijk te maken. Uit de test bleek dat muziek nog een heel belangrijk onderdeel is voor de spanning van het stukje film. Zonder vallen er nog lange stiltes. Uit de testen van anderen kwamen ook wat voorbeelden naar voren van hoe het wel en niet moet. Tempo en ritme blijkt een belangrijk onderdeel voor Marie.
+
+Het stukje film wat ik heb gekozen heeft niet zoveel tempo en ritme in de muziek zitten. De muziek bestaat vooral uit wat lage aanzwellende tonen. Om dit naar voren te brengen heb ik twee dingen geprobeerd, beide gemaakt met hetzelfde scriptje. Hoewel de *captions* heel handmatig toegevoegd moeten worden, zou deze oplossing voor elk stukje geluid kunnen werken. In het scriptje analyseer ik het geluid, waar ik vervolgens de achtergrondkleur en de trilmotor van een telefoon mee aan kan sturen.
+
+Het volume visualiseren met de lichtheid van de achtergrondkleur is natuurlijk iets wat voor veel muziek wordt gedaan, maar trillingen heb ik minder gezien. Ooit heb ik een telefoon gehad, die een instelling had om dit aan te zetten, maar naar mijn idee kreeg ik maar heel af en toe een trilling die dan volledig willekeurig leek.
+
+Zelf vind ik zowel de achtergrond als de trillingen veel te afleidend, maar ik mis natuurlijk niet de informatie ik normaal gesproken via het geluid krijg. Waar ik het wel goed vind werken is als de auto voorbij rijdt. Hier lijkt het net alsof je de motor van de auto voelt trillen.
+
+## Feedback Vasilis (19-04-2024)
+De punten waarvan ik zelf zei dat ze waarschijnlijk te ver gaan, zouden volgens Vasilis prima kunnen werken. Dat soort ideeën zou ik vaker moeten proberen, zeker voor een test met een prototype. Zo kom je juist op nieuwe interessante bevindingen.
+
 
 ## Bronnen
 - &lt;track&gt;: The Embed Text Track element. (2024, 14 maart). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track
 - Web Video Text Tracks Format (WebVTT). (2023, 26 november). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API
 - Van Gemert, V. (z.d.). Exclusive design. https://exclusive-design.vasilis.nl/
+- Visualizations with Web Audio API - Web APIs | MDN. (2024, 15 januari). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Visualizations_with_Web_Audio_API
+- Adam Khoury. (2013, 16 juli). Analyser Bars animation HTML5 Audio API JavaScript tutorial [Video]. YouTube. https://www.youtube.com/watch?v=IBHpSkGZtNM
+- Vibration API - Web APIs | MDN. (2024, 11 april). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API
