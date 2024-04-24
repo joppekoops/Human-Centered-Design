@@ -252,6 +252,80 @@ i {
 	}
 }
 
+@keyframes carThird {
+	0% {
+		bottom: 10%;
+		left: 35%;
+	}
+
+	100% {
+		bottom: 75%;
+		left: 70%;
+	}
+}
+
+@keyframes bang {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fall {
+	0% {
+		opacity: 1;
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 1;
+	}
+
+	60% {
+		opacity: 0;
+	}
+
+	80% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes flies {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	20% {
+		transform: translate(50%, 100%);
+	}
+
+	40% {
+		transform: translate(-50%, 50%);
+	}
+
+	60% {
+		transform: translate(0, -50%);
+	}
+
+	80% {
+		transform: translate(100%, 50%);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
 @media (width < 1000px) {
 	.subtitles {
 		font-size: 1.2em;

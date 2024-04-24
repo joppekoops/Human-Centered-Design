@@ -1,364 +1,400 @@
 WEBVTT
 
 1
-00:00:23.125 --> 00:00:26.833
-<div>Jytte: <span class="Jytte radio">Marius, we've had a few calls that Ørum's cows have escaped again.</span></div>
+00:00:13.708 --> 00:00:16.708
+<div>[Wind]</div>
 
 2
+00:00:16.958 --> 00:00:22.791
+<div style="animation-name: carThird; animation-duration: 6s; animation-timing-function: linear;">[Wroom]</div>
+
+3
+00:00:23.125 --> 00:00:26.833
+<div>Jytte (on the radio): <span class="Jytte radio">Marius, we've had a few calls that Ørum's cows have escaped again.</span></div>
+
+4
 00:00:29.291 --> 00:00:31.041
 <div>Marius: <span class="Marius">Did you call him? Over.</span></div>
 
-3
+5
 00:00:32.916 --> 00:00:34.083
 <div class="Jytte radio">There is no reply.</div>
 
-4
+6
 00:00:34.666 --> 00:00:37.291
 <div class="Jytte radio">I'll tell your wife you are delayed. Over.</div>
 
-5
+7
 00:00:38.083 --> 00:00:40.791
 <div class="Marius">I'll swing by Ørum's. That's okay, Jytte. Over and out.</div>
 
-6
+8
+00:00:46.125 --> 00:00:46.958
+<div style="left:40%; bottom:45%;">[Smack]</div>
+
+9
+00:00:47.208 --> 00:00:48.041
+<div style="left:40%; bottom:45%;">[Smack]</div>
+
+10
+00:00:48.500 --> 00:00:49.333
+<div style="left:40%; bottom:45%;">[Smack]</div>
+
+11
+00:00:49.875 --> 00:00:50.708
+<div style="left:40%; bottom:45%;">[Smack]</div>
+
+12
 00:00:57.625 --> 00:01:02.666
 <div style="bottom: 75%;">[Leaves rustling]</div>
 
-7
+13
 00:01:11.291 --> 00:01:16.916
 <div style="bottom: 35%; animation-name: carFirst; animation-duration: 4s;">[Wroom]</div>
 
-8
+14
 00:01:21.833 --> 00:01:29.250
 <div  style="bottom: 35%; animation-name: carSecond; animation-duration: 8s;">[Wroom]</div>
 
-9
+15
 00:01:29.583 --> 00:01:30.375
 <div style="left: 20%; bottom: 35%;">[Parking brake]</div>
 
-10
+16
 00:01:31.458 --> 00:01:32.250
 <div style="left: 20%; bottom: 35%;">[Car door opens]</div>
 
-11
+17
 00:01:34.083 --> 00:01:34.916
 <div style="left: 20%; bottom: 35%;">Marius: <span class="Marius call">Ørum?</span></div>
 
-12
+18
 00:01:36.458 --> 00:01:37.416
 <div style="left: 20%; bottom: 35%;">[Car door closes]</div>
 
-13
+19
 00:01:39.666 --> 00:01:40.500
 <div class="Marius call" style="left: 30%; bottom: 60%;">Ørum?</div>
 
-14
+20
 00:01:40.916 --> 00:01:42.083
 <div>[Cow moos]</div>
 
-15
+21
 00:01:46.583 --> 00:01:46.666
 <div style="left: 80%; bottom: 60%;">[Knock]</div>
 
-16
+22
 00:01:46.708 --> 00:01:46.791
 <div style="left: 80%; bottom: 60%;">[Knock]</div>
 
-17
+23
 00:01:46.833 --> 00:01:46.916
 <div style="left: 80%; bottom: 60%;">[Knock]</div>
 
-18
+24
 00:01:47.000 --> 00:01:47.083
 <div style="left: 80%; bottom: 60%;">[Knock]</div>
 
-19
+25
 00:01:47.166 --> 00:01:47.250
 <div style="left: 80%; bottom: 60%;">[Knock]</div>
 
-20
+26
 00:01:47.291 --> 00:01:47.375
 <div style="left: 80%; bottom: 60%;">[Knock]</div>
 
-21
+27
 00:01:47.500 --> 00:01:47.583
 <div style="left: 80%; bottom: 60%;">[Knock]</div>
 
-22
+28
 00:01:47.958 --> 00:01:50.583
 <div class="Marius call">Ørum? Your cows have escaped again.</div>
 
-23
+29
 00:02:00.625 --> 00:02:01.458
 <div class="Marius call question" style="left: 40%; bottom: 65%;">Ørum?</div>
 
-24
+30
+00:02:12.250 --> 00:02:15.416
+<div style="animation-name: flies; animation-duration: 1s; animation-iteration-count: infinite; animation-timing-function: linear; left: 35%; bottom: 50%;">[ZZZ, flies flying]</div>
+
+31
 00:02:20.208 --> 00:02:20.750
 <div style="left: 60%; bottom: 50%;">[Sniff, sniff]</div>
 
-25
+32
 00:02:20.791 --> 00:02:21.166
 <div style="left: 80%; bottom: 50%;">[Woof]</div>
 
-26
+33
 00:02:21.375 --> 00:02:21.750
 <div style="left: 80%; bottom: 50%;">[Woof]</div>
 
-27
+34
 00:02:21.958 --> 00:02:22.125
 <div style="left: 80%; bottom: 50%;">[Woof]</div>
 
-28
+35
 00:02:22.166 --> 00:02:24.291
 <div class="Marius call">Be quiet now.</div>
 
-29
+36
 00:02:24.416 --> 00:02:24.791
 <div style="left: 10%; bottom: 90%;">[Woof]</div>
 
-30
+37
 00:02:25.000 --> 00:02:25.375
 <div style="left: 30%; bottom: 90%;">[Woof]</div>
 
-31
+38
 00:02:25.625 --> 00:02:26.000
 <div style="left: 60%; bottom: 90%;">[Woof]</div>
 
-32
+39
 00:02:26.250 --> 00:02:26.625
 <div style="left: 60%; bottom: 85%;">[Woof]</div>
 
-33
+40
 00:02:26.958 --> 00:02:27.333
 <div style="left: 60%; bottom: 60%;">[Woof]</div>
 
-34
+41
 00:02:27.541 --> 00:02:27.916
 <div style="left: 60%; bottom: 60%;">[Woof]</div>
 
-35
+42
 00:02:28.250 --> 00:02:28.625
 <div style="left: 60%; bottom: 60%;">[Woof]</div>
 
-36
+43
 00:02:29.125 --> 00:02:30.041
 <div style="left: 60%; bottom: 30%;">[Door opens]</div>
 
-37
+44
 00:02:30.666 --> 00:02:31.500
 <div class="Marius call unsure"  style="left: 55%; bottom: 60%;">Ørum?</div>
 
-38
+45
 00:02:32.250 --> 00:02:32.375
 <div style="left: 55%; bottom: 60%;">[Knock]</div>
 
-39
+46
 00:02:32.416 --> 00:02:32.541
 <div style="left: 55%; bottom: 60%;">[Knock]</div>
 
-40
+47
 00:02:32.583 --> 00:02:32.708
 <div style="left: 55%; bottom: 60%;">[Knock]</div>
 
-41
+48
 00:02:32.750 --> 00:02:32.875
 <div style="left: 55%; bottom: 60%;">[Knock]</div>
 
-42
+49
 00:02:33.000 --> 00:02:33.833
 <div class="Marius question">Hello?</div>
 
-43
+50
 00:02:44.916 --> 00:02:47.000
 <div class="Marius whisper" style="left: 60%; bottom: 70%;">Damn.</div>
 
-44
+51
 00:02:47.500 --> 00:02:48.583
 <div class="Marius whisper" style="left: 60%; bottom: 70%;">Holy crap.</div>
 
-45
+52
 00:02:56.000 --> 00:02:57.500
 <div class="Marius call">It's Marius, from the police!</div>
 
-46
+53
 00:03:07.666 --> 00:03:08.500
 <div class="Marius unsure">Hello</div>
 
-47
+54
 00:03:10.791 --> 00:03:11.375
 <div style="bottom: 30%; left: 40%;">[Step]</div>
 
-48
+55
 00:03:11.541 --> 00:03:12.125
 <div style="bottom: 30%; left: 35%;">[Step]</div>
 
-49
+56
 00:03:12.375 --> 00:03:12.958
 <div style="bottom: 30%; left: 30%;">[Step]</div>
 
-50
+57
 00:03:13.833 --> 00:03:15.333
 <div style="bottom: 40%; left: 40%;">[door squeaks]</div>
 
-51
+58
 00:03:22.875 --> 00:03:23.666
 <div class="Marius whisper question" style="left: 30%; bottom: 60%;">Hey?</div>
 
-52
+59
 00:03:24.500 --> 00:03:25.291
 <div class="Marius whisper"  style="left: 40%; bottom: 60%;">Hey</div>
 
-53
+60
 00:03:32.208 --> 00:03:33.666
-<div>[Bang! body falls on the floor]</div>
+<div>[Bang!]</div>
 
-54
+61
 00:03:55.833 --> 00:03:56.708
 <div class="Marius whisper sad">No...</div>
 
-55
+62
 00:04:04.333 --> 00:04:06.416
 <div style="bottom: 30%; left: 70%;">[Gasps for air]</div>
 
-56
+63
 00:04:10.583 --> 00:04:11.833
-<div style="left: 70%;">Jytte (by phone): <span class="Jytte radio">Police, Jytte speaking.</span></div>
+<div style="left: 70%;">Jytte (on the phone): <span class="Jytte radio">Police, Jytte speaking.</span></div>
 
-57
+64
 00:04:11.916 --> 00:04:14.583
 <div class="Marius stressed whisper" style="left: 70%;">It's me. Please dispatch an ambulance to Ørum's farm.</div>
 
-58
+65
 00:04:14.666 --> 00:04:16.583
 <div style="left: 70%;"><div class="Jytte radio">What happend?</div>
 <div class="Marius stressed whisper">I have three dead victims.</div></div>
 
-59
+66
 00:04:16.666 --> 00:04:18.958
 <div class="Marius stressed whisper" style="left: 70%;">And one injured boy, who's still breathing?</div>
 
-60
+67
 00:04:19.041 --> 00:04:21.250
 <div style="left: 70%;"><div class="Jytte radio">The oldest boy?</div>
 <div class="Marius stressed whisper">No, not him.</div></div>
 
-61
+68
 00:04:21.333 --> 00:04:24.791
 <div class="Marius stressed whisper" style="left: 70%;">It's the youngest. One of the two foster children.</div>
 
-62
+69
 00:04:24.875 --> 00:04:26.500
 <div class="Jytte radio" style="left: 70%;">Where's the foster girl?</div>
 
-63
-00:04:26.541 --> 00:04:28.000
-<div>[Bang!]</div>
+70
+00:04:26.541 --> 00:04:29.000
+<div style="animation-name: bang; animation-duration: 2.5s; animation-timing-function: linear(
+    0, 0.0039, 0.0157, 0.0352, 0.0625 9.09%,
+    0.1407, 0.25, 0.3908, 0.5625, 0.7654, 1,
+    0.8907, 0.8125 45.45%, 0.7852, 0.7657,
+    0.7539, 0.75, 0.7539, 0.7657, 0.7852,
+    0.8125 63.64%, 0.8905, 1 72.73%, 0.9727,
+    0.9532, 0.9414, 0.9375, 0.9414, 0.9531,
+    0.9726, 1, 0.9883, 0.9844, 0.9883, 1
+  );">[Bang! Something falls in the basement]</div>
 
-64
+71
 00:04:29.541 --> 00:04:32.958
 <div class="Marius stressed whisper" style="left: 70%;">Send everything you've got! And launch a search for Ørum.</div>
 
-65
+72
 00:04:33.041 --> 00:04:34.708
 <div class="Jytte radio" style="left: 70%;">Just get out of the house!</div>
 
-66
+73
 00:04:45.291 --> 00:04:48.291
-<div>[door squeaks]</div>
+<div>[Door squeaks]</div>
 
-67
+74
 00:04:48.833 --> 00:04:49.875
 <div class="Marius question">Police!</div>
 
-68
+75
 00:04:51.708 --> 00:04:52.416
 <div class="Marius unsure whisper">Hello?</div>
 
-69
+76
 00:04:59.458 --> 00:04:59.833
 <div>[Step]</div>
 
-70
+77
 00:05:00.375 --> 00:05:00.750
 <div>[Step]</div>
 
-71
+78
 00:05:01.750 --> 00:05:02.125
 <div>[Step]</div>
 
-72
+79
 00:05:03.416 --> 00:05:03.791
 <div>[Step]</div>
 
-73
+80
 00:05:04.416 --> 00:05:04.791
 <div>[Step]</div>
 
-74
+81
 00:05:05.541 --> 00:05:05.916
 <div>[Step]</div>
 
-75
+82
 00:05:07.583 --> 00:05:07.958
 <div>[Step]</div>
 
-76
+83
 00:05:11.541 --> 00:05:12.750
 <div>[Click]</div>
 
-77
+84
 00:05:15.875 --> 00:05:18.875
-<div>[door squeaks]</div>
+<div>[Door squeaks]</div>
 
-78
+85
 00:05:34.291 --> 00:05:36.208
 <div>[rrrrrr]</div>
 
-79
+86
 00:05:37.375 --> 00:05:39.041
 <div>[rrrrr]</div>
 
-80
+87
 00:05:40.083 --> 00:05:41.375
 <div>[rrrrr]</div>
 
-81
-00:05:41.875 --> 00:05:42.958
-<div>[Metal falls on the floor]</div>
+88
+00:05:41.875 --> 00:05:43.958
+<div style="animation-name: fall; animation-duration: 2s;">[Metal falls on the floor]</div>
 
-82
+89
 00:05:44.208 --> 00:05:45.250
 <div>[Sigh]</div>
 
-83
+90
 00:05:46.000 --> 00:05:47.041
-<div>[Sigh]</div>
+<div style="left: 80%;">[Sigh]</div>
 
-84
+91
 00:05:50.000 --> 00:05:53.250
 <div class="Marius whisper stressed">There... Quiet. Easy now.</div>
 
-85
+92
 00:05:54.500 --> 00:05:55.500
 <div class="Marius whisper stressed">There you go.</div>
 
-86
+93
 00:05:56.916 --> 00:05:59.500
 <div class="Marius whisper">Don't be afraid. I'm a police officer.</div>
 
-87
+94
 00:06:00.416 --> 00:06:03.083
 <div class="Marius whisper">My name is Marius, and I'm here to help you.</div>
 
-88
+95
 00:06:04.750 --> 00:06:06.458
 <div class="Marius whisper">You're Astrid, right?</div>
 
-89
+96
 00:06:09.625 --> 00:06:10.791
 <div class="Marius whisper">Do you live down here?</div>
 
-90
+97
 00:07:11.541 --> 00:07:14.541
 <div>THE CHESTNUT MAN</div>
 
