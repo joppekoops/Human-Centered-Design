@@ -64,6 +64,7 @@
 		playPauseButton.addEventListener('click', () => {
 			if (video.paused) {
 				video.play();
+				frameLooper();
 				playPauseButton.firstChild.classList.remove('fa-play');
 				playPauseButton.firstChild.classList.add('fa-pause');
 				videoContainer.classList.add('playing');
@@ -128,21 +129,24 @@
 		// Establish all variables that your Analyser will use
 		let analyser;
 		// Initialize the MP3 player after the page loads all of its HTML into the window
-		window.addEventListener("load", initMp3Player, false);
+		body.addEventListener("click", initMp3Player, {capture: true, once: true});
 
 		function initMp3Player(){
+			console.log('init');
 			const context = new AudioContext(); // AudioContext object instance
 			analyser = context.createAnalyser(); // AnalyserNode method
 			// Re-route audio playback into the processing graph of the AudioContext
 			const source = context.createMediaElementSource(video); 
 			source.connect(analyser);
 			analyser.connect(context.destination);
-			frameLooper();
 		}
 		// frameLooper() animates any style of graphics you wish to the audio frequency
 		// Looping at the default frame rate that the browser provides(approx. 60 FPS)
 		function frameLooper(){
-			window.requestAnimationFrame(frameLooper);
+			if (!video.paused){
+				window.requestAnimationFrame(frameLooper);
+			}
+			console.log('frame');
 			const fbc_array = new Uint8Array(analyser.frequencyBinCount);
 			analyser.getByteFrequencyData(fbc_array);
 
